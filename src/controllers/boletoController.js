@@ -41,7 +41,7 @@ module.exports = {
             agencyDigit: '0',
             account: '54291',
             accountDigit: '1',
-            expirationDay: new Date(date[0], date[1], date[2]),
+            expirationDay: new Date(date[0], date[1] -1, date[2]),
             documentDate: new Date(),
             processingDate: new Date(), 
             card: '09',
