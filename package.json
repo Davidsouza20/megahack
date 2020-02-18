@@ -10,6 +10,11 @@
     "start": "node index.js",
     "test": "node test.js"
   },
+  "builds": [{
+    "src": "index.js",
+    "use": "@now/node-server"
+}],
+
   "dependencies": {
     "@sendgrid/mail": "^6.4.0",
     "axios": "^0.19.0",
