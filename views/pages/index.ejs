@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../partials/header.ejs %>
+</head>
+
+<body>
+  <form method="POST" action="/getRate">
+    <label for="type">Select a mail type</label><br>
+    <select name="type" id="">
+      <option value="LettersStamped">Letters (Stamped)</option>
+      <option value="LettersMetered">Letters (Metered)</option>
+      <option value="LargeEnvelopes">Large Envelopes (Flats)</option>
+      <option value="First-Class">First-Class Package Service—Retail</option>
+    </select><br>
+
+    <label  for="zone">Zone (Only for first class package service) </label><br>
+    <select name="zone" id="">
+        <option value="1">1 & 2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+    </select>
+
+    <div id="special">
+      <label  for="weight">Weight Not Over (oz.)</label><br>
+      <select name="weight" id="">
+        <option value="1">1oz</option>
+        <option value="2">2oz</option>
+        <option value="3">3oz</option>
+        <option value="4">4oz</option> 
+        <option value="5">5oz</option> 
+        <option value="6">6oz</option>
+        <option value="7">7oz</option> 
+        <option value="8">8oz</option> 
+        <option value="9">9oz</option> 
+        <option value="10">10oz</option> 
+        <option value="11">11oz</option> 
+        <option value="12">12oz</option> 
+        <option value="13">13oz</option>  
+      </select><br>
+    </div> 
+    <input type="submit" value="Send">
+    </select>
+  </form>
+
+</body>
+</html>
