@@ -17,6 +17,10 @@ const BoletoSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
+    provider_name: { //nome do fornecedor
+        type: String,
+        required: true,
+    },
     customer_zipcode: { //cep do cliente
         type: Number,
         maxlength: 8,
